@@ -4,14 +4,15 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class VpAdapter(val context: Context): RecyclerView.Adapter<VpAdapter.MyVh>() {
+class VpAdapter(val context: Context, val list:ArrayList<guide>): RecyclerView.Adapter<VpAdapter.MyVh>() {
     class MyVh(itemView: View): RecyclerView.ViewHolder(itemView) {
         val title:TextView=itemView.findViewById(R.id.title1)
         val descr:TextView=itemView.findViewById(R.id.sometext)
-        val image:TextView=itemView.findViewById(R.id.img1)
+        val image:ImageView=itemView.findViewById(R.id.img1)
 
     }
 
@@ -21,10 +22,13 @@ class VpAdapter(val context: Context): RecyclerView.Adapter<VpAdapter.MyVh>() {
     }
 
     override fun onBindViewHolder(holder: MyVh, position: Int) {
+        holder.title.text=list[position].title
+        holder.descr.text=list[position].descr
+        holder.image.setImageResource(list[position].image)
 
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return list.size
     }
 }

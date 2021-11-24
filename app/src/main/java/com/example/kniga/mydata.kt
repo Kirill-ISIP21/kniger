@@ -9,16 +9,16 @@ object List {
             title = "Быстрая доставка!",
             descr = "Ппыапавпаыпаыв ываывлалывавыа аываыва ываываыва цууцуцц уцацуацу ацуацуацуацу фыывфвыффы ыфвфыв adfsafas asfasf fasfasfa afsfasf fasfasf asfas\n"
                     + "dasdasdasd adssadasdas",
-            R.id.img1
+            R.drawable.fast1
         ),
         guide (title = "Быстрая доставка!",
         descr = "Ппыапавпаыпаыв ываывлалывавыа аываыва ываываыва цууцуцц уцацуацу ацуацуацуацу фыывфвыффы ыфвфыв adfsafas asfasf fasfasfa afsfasf fasfasf asfas\n"
                 + "dasdasdasd adssadasdas",
-        R.id.fast2),
+        R.drawable.fast2),
         guide (title = "Быстрая доставка!",
             descr = "Ппыапавпаыпаыв ываывлалывавыа аываыва ываываыва цууцуцц уцацуацу ацуацуацуацу фыывфвыффы ыфвфыв adfsafas asfasf fasfasfa afsfasf fasfasf asfas\n"
                     + "dasdasdasd adssadasdas",
-            R.id.fast3)
+            R.drawable.fast3)
     )
 }
 
